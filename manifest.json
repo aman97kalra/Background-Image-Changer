@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Jarvis",
+    "version": "1.0",
+    "description": "An extension to change background image of new tab after every 10 sec",
+    "chrome_url_overrides": {
+        "newtab": "customNewTab.html"
+    },
+    "web_accessible_resources": [
+        "images/*"
+    ],
+    "permissions": [
+        "https://source.unsplash.com/",
+        "storage",
+        "tabs"
+    ],
+    "browser_action":{
+        
+    },
+    "background":{
+        "scripts":[
+            "background.js"
+        ],
+        "persistent":false
+    }
+}
